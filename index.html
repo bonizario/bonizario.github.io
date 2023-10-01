@@ -4,9 +4,301 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Inter:wght@300;500&display=swap"
+    />
     <title>bonizario</title>
   </head>
-  <body>
-    <h1 class="text-4xl font-bold underline">Hello world!</h1>
+  <body class="bg-black font-inter font-light text-[#E6EDF3]">
+    <main
+      id="about"
+      class="flex min-h-screen flex-col items-center bg-[#111111] px-8 py-12 md:pt-0 [&>*]:w-full [&>*]:max-w-5xl"
+    >
+      <header class="flex h-32 items-center justify-between max-md:hidden">
+        <strong class="text-2xl">GB</strong>
+        <nav class="flex gap-6 text-lg">
+          <a href="#about" class="group focus-visible:outline-offset-8">
+            About
+            <span
+              class="block h-[0.0625rem] max-w-0 bg-[#E6EDF3] transition-all group-hover:max-w-full"
+            />
+          </a>
+          <a href="#experience" class="group focus-visible:outline-offset-8">
+            Experience
+            <span
+              class="block h-[0.0625rem] max-w-0 bg-[#E6EDF3] transition-all group-hover:max-w-full"
+            />
+          </a>
+          <a href="#education " class="group focus-visible:outline-offset-8">
+            Education
+            <span
+              class="block h-[0.0625rem] max-w-0 bg-[#E6EDF3] transition-all group-hover:max-w-full"
+            />
+          </a>
+          <a href="#projects " class="group focus-visible:outline-offset-8">
+            Projects
+            <span
+              class="block h-[0.0625rem] max-w-0 bg-[#E6EDF3] transition-all group-hover:max-w-full"
+            />
+          </a>
+        </nav>
+      </header>
+      <section class="flex flex-grow-[1] flex-col justify-end gap-6">
+        <p>Hey, I'm</p>
+        <h1
+          class="w-fit bg-gradient-to-tr from-[#C850C0] from-25% via-[#4158D0] via-60% to-[#FFCC70] to-100% bg-clip-text p-0.5 font-dm-sans text-6xl font-semibold text-transparent md:text-7xl lg:text-8xl"
+        >
+          Gabriel Bonizário
+        </h1>
+        <p class="text-justify text-lg leading-6">
+          I'm a Software Developer based in Brazil and also an engineering
+          student. I have over one year of experience designing, developing, and
+          testing software solutions, working with various programming languages
+          and database management systems. In my current job, I'm developing a
+          platform built with TypeScript, using React, Next, Node, Nest, and
+          MariaDB.
+        </p>
+      </section>
+      <div
+        class="mt-6 flex flex-grow-[2] items-end gap-2 [&_button]:max-sm:text-xs"
+      >
+        <button
+          class="group h-14 w-52 rounded bg-gradient-to-tr from-[#4158D0] from-0% via-[#C850C0] via-50% to-[#FFCC70] to-100% p-0.5 transition hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#C850C0] focus-visible:translate-y-[-0.25em] focus-visible:shadow-[0_0.5em_0.5em_-0.4em_#C850C0] focus-visible:outline-offset-[-0.125rem]"
+        >
+          <span
+            class="flex h-full w-full items-center justify-center gap-1 rounded bg-[#111111] font-medium sm:gap-2"
+          >
+            <img
+              src="assets/github.svg"
+              alt="GitHub Logo"
+              class="h-4 w-4 sm:h-6 sm:w-6"
+            />
+            GitHub
+          </span>
+        </button>
+        <button
+          class="group h-14 w-52 rounded bg-gradient-to-tr from-[#4158D0] from-40% via-[#C850C0] via-70% to-[#FFCC70] to-100% p-0.5 transition hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#C850C0] focus-visible:translate-y-[-0.25em] focus-visible:shadow-[0_0.5em_0.5em_-0.4em_#C850C0] focus-visible:outline-offset-[-0.125rem]"
+        >
+          <span
+            class="flex h-full w-full items-center justify-center gap-1 rounded bg-[#111111] font-medium sm:gap-2"
+          >
+            <img
+              src="assets/linkedin.svg"
+              alt="LinkedIn Logo"
+              class="mt-[-0.35rem] h-4 w-4 sm:mt-[-0.5rem] sm:h-6 sm:w-6"
+            />
+            LinkedIn
+          </span>
+        </button>
+        <button
+          class="group h-14 w-52 rounded bg-gradient-to-tr from-[#4158D0] from-20% via-[#C850C0] via-50% to-[#FFCC70] to-100% p-0.5 transition hover:translate-y-[-0.25em] hover:shadow-[0_0.5em_0.5em_-0.4em_#C850C0] focus-visible:translate-y-[-0.25em] focus-visible:shadow-[0_0.5em_0.5em_-0.4em_#C850C0] focus-visible:outline-offset-[-0.125rem]"
+        >
+          <span
+            class="flex h-full w-full items-center justify-center gap-1 rounded bg-[#111111] font-medium sm:gap-2"
+          >
+            <img
+              src="assets/gmail.svg"
+              alt="Gmail Logo"
+              class="h-4 w-4 sm:h-6 sm:w-6"
+            />
+            Gmail
+          </span>
+        </button>
+      </div>
+    </main>
+    <section
+      id="experience"
+      class="flex flex-col items-center gap-8 px-8 py-12 [&>*]:w-full [&>*]:max-w-5xl"
+    >
+      <h2 class="text-2xl uppercase">EXPERIENCE</h2>
+      <section>
+        <header class="flex justify-between max-sm:flex-col">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-medium">Full Stack Developer</h3>
+            <h4 class="text-base">Grão Direto · Full-time</h4>
+            <small class="text-xs text-[#B4B4B4] sm:text-base">
+              Uberaba, Minas Gerais, Brazil · On-site
+            </small>
+          </div>
+          <small class="text-xs text-[#B4B4B4] max-sm:mt-1 sm:text-base">
+            Sep 2023 - Present · 2 mos
+          </small>
+        </header>
+        <h5 class="mr-2 mt-4 inline-block text-sm font-medium max-sm:mb-2">
+          Skills:
+        </h5>
+        <ul class="inline-flex flex-wrap gap-2">
+          <li
+            class="rounded bg-gradient-to-br from-[#4158D0] from-10% via-[#C850C0] via-40% to-[#FFCC70] to-100% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              TypeScript
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-tl from-[#4158D0] from-10% via-[#C850C0] via-60% to-[#FFCC70] to-100% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              React
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-tr from-[#4158D0] from-30% via-[#C850C0] via-70% to-[#FFCC70] to-90% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              Next.js
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-bl from-[#4158D0] from-20% via-[#C850C0] via-50% to-[#FFCC70] to-80% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              Node.js
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-tr from-[#4158D0] from-40% via-[#C850C0] via-60% to-[#FFCC70] to-90% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              NestJS
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-br from-[#4158D0] from-10% via-[#C850C0] via-40% to-[#FFCC70] to-100% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              MariaDB
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <header class="flex justify-between max-sm:flex-col">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-medium">Back End Developer</h3>
+            <h4 class="text-base">Árvore · Internship</h4>
+            <small class="text-xs text-[#B4B4B4] sm:text-base">
+              Rio de Janeiro, Rio de Janeiro, Brazil · Remote
+            </small>
+          </div>
+          <small class="text-xs text-[#B4B4B4] max-sm:mt-1 sm:text-base">
+            Dec 2020 - Jan 2022 · 1 yr 2 mos
+          </small>
+        </header>
+        <ul
+          class="mt-4 flex flex-col gap-2 text-base text-[#C4C4C4] max-sm:text-sm"
+        >
+          <li>
+            - Developed a RESTful API to integrate partners' software, impacting
+            over 2 million users.
+          </li>
+          <li>
+            - Improved the code coverage with unit and integration tests in
+            Elixir to ensure software quality.
+          </li>
+          <li>
+            - Worked on integrating an internal GraphQL API with the front end.
+          </li>
+          <li>
+            - Automated team's tasks with Shell Script and Python, cutting
+            execution time in half.
+          </li>
+          <li>
+            - Collaborated on maintaining a Rails microservice for
+            pre-processing PDF and EPUB files.
+          </li>
+        </ul>
+        <h5 class="mr-2 mt-4 inline-block text-sm font-medium max-sm:mb-2">
+          Skills:
+        </h5>
+        <ul class="inline-flex flex-wrap gap-2">
+          <li
+            class="rounded bg-gradient-to-tl from-[#4158D0] from-10% via-[#C850C0] via-60% to-[#FFCC70] to-100% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              Python
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-tr from-[#4158D0] from-30% via-[#C850C0] via-70% to-[#FFCC70] to-90% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              Elixir
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-br from-[#4158D0] from-20% via-[#C850C0] via-50% to-[#FFCC70] to-80% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              Ruby
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-tr from-[#4158D0] from-40% via-[#C850C0] via-60% to-[#FFCC70] to-90% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              GraphQL
+            </span>
+          </li>
+          <li
+            class="rounded bg-gradient-to-br from-[#4158D0] from-10% via-[#C850C0] via-40% to-[#FFCC70] to-100% p-[0.0625rem]"
+          >
+            <span
+              class="flex h-full w-full items-center justify-center rounded bg-[#111111] px-2 py-1 text-xs"
+            >
+              MySQL
+            </span>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <div class="mx-8 h-[0.0625rem] bg-[#C4C4C4]"></div>
+    <section
+      id="education"
+      class="flex flex-col items-center gap-8 px-8 py-12 [&>*]:w-full [&>*]:max-w-5xl"
+    >
+      <h2 class="text-2xl uppercase">EDUCATION</h2>
+      <section class="flex justify-between max-sm:flex-col">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-xl font-medium">UFTM</h3>
+          <h4 class="text-base">
+            Bachelor of Engineering - BE, Mechanical Engineering
+          </h4>
+        </div>
+        <small class="text-xs text-[#B4B4B4] max-sm:mt-1 sm:text-base">
+          2019 - 2023
+        </small>
+      </section>
+    </section>
+    <div class="mx-8 h-[0.0625rem] bg-[#C4C4C4]"></div>
+    <section
+      id="projects"
+      class="flex flex-col items-center gap-8 px-8 py-12 [&>*]:w-full [&>*]:max-w-5xl"
+    >
+      <h2 class="text-2xl uppercase">MAIN PROJECTS</h2>
+    </section>
   </body>
 </html>

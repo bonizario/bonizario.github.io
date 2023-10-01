@@ -1,0 +1,7 @@
+*
+!.gitignore
+!index.html
+!tailwind.css
+!index.css
+!assets
+!assets/*
