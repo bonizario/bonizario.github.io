@@ -534,9 +534,9 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mr-2 {
@@ -603,6 +603,10 @@ video {
   width: 13rem;
 }
 
+.w-\[calc\(100\%-4rem\)\] {
+  width: calc(100% - 4rem);
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -614,6 +618,10 @@ video {
 
 .max-w-0 {
   max-width: 0rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-grow-\[1\] {
